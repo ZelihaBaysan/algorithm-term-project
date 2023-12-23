@@ -6,8 +6,6 @@ KAYIT TAMAMLANDIKTAN SONRA YAPMAK İSTEDİKLERİ İŞLEMLER:
 
 ·        Bakiye yükleme
 
-·        Kart sahibi değiştirme
-
 ·        Bakiye kontrolu
 
 ·        Öğrenci/sivil/emekli durumu güncelleme
