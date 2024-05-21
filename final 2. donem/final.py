@@ -20,7 +20,6 @@ def save_password_to_db(platform, password):
 def create_password_dict():
     mainParts = {}
 
-    # Şifre alma ve doğrulama
     while True:
         password = input("Lutfen 6 haneli bir sifre giriniz: ")
         if len(password) == 6 and password.isdigit():
@@ -29,7 +28,7 @@ def create_password_dict():
         else:
             print("sifre 6 haneli olmali ve rakamlardan olusmali. Lutfen tekrar deneyin.")
 
-    # Platform adı alma ve doğrulama
+
     while True:
         platform = input("Kullandiginiz platform adini giriniz: ").strip()
         if len(platform) >= 2:
@@ -54,7 +53,6 @@ def create_custom_password():
             else:
                 custom_password = password + platform
 
-            # Veritabanına kaydetme
             save_password_to_db(platform, custom_password)
             break
         else:
@@ -62,8 +60,6 @@ def create_custom_password():
 
     print(f"Olusturulan sifre: {custom_password}")
 
-# Veritabanını oluştur
 create_database()
 
-# Özel şifre oluştur ve veritabanına kaydet
 create_custom_password()
